@@ -111,6 +111,7 @@ product_response="$(api POST "savingsproducts" "$(jq -nc \
     name: ("RBFCU Regular Share " + $run),
     shortName: $short,
     description: "Synthetic U.S. credit-union regular-share proving-ground product",
+    locale: "en",
     currencyCode: "USD",
     digitsAfterDecimal: 2,
     inMultiplesOf: 0,

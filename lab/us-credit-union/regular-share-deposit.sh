@@ -89,7 +89,7 @@ echo
 
 echo "Checking Fineract health..."
 curl --silent --show-error --insecure --fail-with-body \
-  "${FINERACT_BASE_URL}/actuator/health" >/dev/null
+  "${FINERACT_BASE_URL}/fineract-provider/actuator/health" >/dev/null
 
 echo "Creating synthetic chart of accounts..."
 cash_id="$(create_gl_account "RBFCU Cash ${RUN_ID}" "1${RUN_ID}01" 1)"
